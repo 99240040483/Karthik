@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
+    <meta name="description" content="A professional photography portfolio showcasing stunning visual storytelling.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Aura <span>Photography</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1>Capturing the Essence of <span>Life</span></h1>
+            <p>Welcome to my visual diary. Explore the world through my lens.</p>
+            <a href="#gallery" class="btn">View Gallery</a>
+        </div>
+    </header>
+
+    <section id="gallery" class="gallery-section">
+        <h2 class="section-title">Selected Works</h2>
+
+        <!-- Filter Buttons -->
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="photoshoots">Photoshoots</button>
+            <button class="filter-btn" data-filter="wedding-photos">Wedding Photos</button>
+            <button class="filter-btn" data-filter="wedding-videos">Wedding Videos</button>
+            <button class="filter-btn" data-filter="instagram-reels">Instagram Reels</button>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- Photoshoots -->
+            <div class="gallery-item" data-category="photoshoots">
+                <img src="https://images.unsplash.com/photo-1542051812871-7575008298dc?auto=format&fit=crop&w=800&q=80" alt="Photoshoot 1">
+                <div class="overlay">
+                    <div class="overlay-text">Fashion Shoot</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="photoshoots">
+                <img src="https://images.unsplash.com/photo-1516483638261-f40af5aa3400?auto=format&fit=crop&w=800&q=80" alt="Photoshoot 2">
+                <div class="overlay">
+                    <div class="overlay-text">Urban Portrait</div>
+                </div>
+            </div>
+
+            <!-- Wedding Photos -->
+            <div class="gallery-item" data-category="wedding-photos">
+                <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80" alt="Wedding 1">
+                <div class="overlay">
+                    <div class="overlay-text">The Vows</div>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="wedding-photos">
+                <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80" alt="Wedding 2">
+                <div class="overlay">
+                    <div class="overlay-text">First Dance</div>
+                </div>
+            </div>
+
+            <!-- Wedding Videos -->
+            <div class="gallery-item" data-category="wedding-videos">
+                <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?auto=format&fit=crop&w=800&q=80" alt="Wedding Video">
+                <div class="overlay">
+                    <div class="overlay-text"><i class="fas fa-play-circle"></i> Highlight Reel</div>
+                </div>
+            </div>
+
+            <!-- Instagram Reels -->
+            <div class="gallery-item" data-category="instagram-reels">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=800&q=80" alt="Instagram Reel">
+                <div class="overlay">
+                    <div class="overlay-text"><i class="fab fa-instagram"></i> Behind the Scenes</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-container glassmorphism">
+            <div class="about-image">
+                <img src="profile_image.png" alt="Photographer Portrait">
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">About Me</h2>
+                <p>Hello! I'm a passionate photographer dedicated to freezing beautiful moments in time. With over a decade of experience, I specialize in landscape, portrait, and street photography. My goal is to tell compelling stories through my images and evoke emotions that resonate with the viewer.</p>
+                <p>When I'm not behind the camera, you can find me exploring new trails or chasing the perfect golden hour light.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container glassmorphism">
+            <p>Interested in working together or just want to say hi? Let's connect!</p>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+1 (555) 123-4567</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>hello@auraphotography.com</span>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Aura Photography. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
